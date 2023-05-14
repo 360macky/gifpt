@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Gifpt",
+  "name_for_model": "Gifpt",
+  "description_for_human": "Plugin for searching and returning GIFs based on a search term.",
+  "description_for_model": "Plugin for searching and returning GIFs based on a search term. The user should provide a search term, and the plugin will return an array of objects, each containing a gifUrl and a description. The GIFs should be represented as Markdown images.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://gif-finder.vercel.app/openapi.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://gif-finder.vercel.app/logo.png",
+  "contact_email": "hello@marceloarias.com",
+  "legal_info_url": "http://example.com/legal"
+}
