@@ -4,7 +4,7 @@ info:
   description: A plugin for searching GIFs based on a search term.
   version: 'v1'
 servers:
-  - url: https://gif-finder.vercel.app
+  - url: https://gifpt.vercel.app
 paths:
   /api/search:
     get:

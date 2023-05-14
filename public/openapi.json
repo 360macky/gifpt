@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://gif-finder.vercel.app"
+      "url": "https://gifpt.vercel.app"
     }
   ],
   "paths": {

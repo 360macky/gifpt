@@ -9,10 +9,10 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://gif-finder.vercel.app/openapi.json",
+    "url": "https://gifpt.vercel.app/openapi.json",
     "is_user_authenticated": false
   },
-  "logo_url": "https://gif-finder.vercel.app/logo.png",
+  "logo_url": "https://gifpt.vercel.app/logo.png",
   "contact_email": "hello@marceloarias.com",
   "legal_info_url": "http://example.com/legal"
 }
