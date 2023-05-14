@@ -1,0 +1,72 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Gif Finder",
+    "description": "A plugin for searching GIFs based on a search term.",
+    "version": "v1"
+  },
+  "servers": [
+    {
+      "url": "https://gif-finder.vercel.app"
+    }
+  ],
+  "paths": {
+    "/api/search": {
+      "get": {
+        "operationId": "searchGifs",
+        "summary": "Search GIFs based on a search term.",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "searchTerm",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "The search term for the GIFs."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/searchGifsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "searchGifsResponse": {
+        "type": "object",
+        "properties": {
+          "gifs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Gif"
+            }
+          }
+        }
+      },
+      "Gif": {
+        "type": "object",
+        "properties": {
+          "gifUrl": {
+            "type": "string",
+            "description": "The URL of the GIF."
+          },
+          "description": {
+            "type": "string",
+            "description": "The description of the GIF."
+          }
+        }
+      }
+    }
+  }
+}
